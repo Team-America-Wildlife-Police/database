@@ -32,7 +32,8 @@ DOMAIN =\
             , "unit": {} #kg, individuals, etc.
             , "url": {}
             , "username": {}
-            , "uuid": {}
+            , "uuid": {"type": "string"
+                       "unique": True}
               # user - entered fields
             , "additional_notes": {}
             , "case_handler_contact_info": {}
