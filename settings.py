@@ -13,6 +13,7 @@ DOMAIN =\
             , "date_listed": {"type":"datetime"}
             , "description": {}
             , "keyword_tags": {}
+            , "product_img_url": {}
             , "post_geolocation": { "type": "string" }
             , "reported_animal" : {"type": "string"}
             , "reported_how": {}
@@ -31,6 +32,7 @@ DOMAIN =\
             , "title": { "type": "string" }
             , "unit": {} #kg, individuals, etc.
             , "url": {}
+            , "weighting": {}
             , "username": {}
             , "uuid": {"type": "string"
                        "unique": True}
