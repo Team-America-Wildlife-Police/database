@@ -9,10 +9,7 @@ DOMAIN =\
     { "post":
         { "schema": 
             { # scraped fields
-            , "title": { "type": "string" }
-            , "username": { "type": "string" }
-            , "url": {"type":"string"}
-            , "date_listed": {"type":"datetime"}
+             "date_listed": {"type":"datetime"}
             , "date_accessed": {"type":"datetime"}
             , "post_geolocation": { "type": "string" }
             , "reported_animal" : {"type": "string"}
@@ -28,6 +25,7 @@ DOMAIN =\
             , "price": {}
             , "quantity": {}
             , "species": {}
+            , "title": { "type": "string" }
             , "unit": {} #kg, individuals, etc.
             , "url": {}
             , "username": {}
