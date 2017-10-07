@@ -9,8 +9,10 @@ DOMAIN =\
     { "post":
         { "schema": 
             { # scraped fields
-             "date_listed": {"type":"datetime"}
             , "date_accessed": {"type":"datetime"}
+            , "date_listed": {"type":"datetime"}
+            , "description": {}
+            , "keyword_tags": {}
             , "post_geolocation": { "type": "string" }
             , "reported_animal" : {"type": "string"}
             , "reported_how": {}
@@ -20,8 +22,6 @@ DOMAIN =\
                         , "Twitter"
                         ]
             
-            , "description": {}
-            , "keyword tags": []
             , "price": {}
             , "quantity": {}
             , "species": {}
@@ -32,9 +32,9 @@ DOMAIN =\
             
               # user - entered fields
             , "additional_notes": {}
+            , "case_handler_contact_info": {}
             , "class": {}
             , "common_names": {}
-            , "case_handler_contact_info": {}
             , "exporter_country": {}
             , "family": {}
             , "genus": {}
@@ -44,7 +44,7 @@ DOMAIN =\
                 , "Export offer"
                 , "Commision"
                 ]
-            , "order": {}
+            , "order": {} #taxonomy order
             , "purpose": {} #Trophy, medicine, taxidermy
             , "relevant_authorities": {}
             , "taxon": {}
