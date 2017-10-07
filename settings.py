@@ -17,10 +17,13 @@ DOMAIN =\
             , "reported_animal" : {"type": "string"}
             , "reported_how": {}
             , "reported_where": {}
-            , "source": [ "Ebay"
-                        , "Gumtree"
-                        , "Twitter"
-                        ]
+            , "source": {"type":"string",
+                         "allowed": 
+                             [ "Ebay"
+                              , "Gumtree"
+                              , "Twitter"
+                              ]
+                        }
             
             , "price": {}
             , "quantity": {}
