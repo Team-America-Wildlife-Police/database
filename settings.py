@@ -18,14 +18,14 @@ DOMAIN =\
             , "reported_animal" : {"type": "string"}
             , "reported_how": {}
             , "reported_where": {}
-            , "source": {"type":"string",
-                         "allowed": 
-                             [ "Ebay"
-                              , "Gumtree"
-                              , "Twitter"
-                              ]
-                        }
-            
+            , "source": 
+                { "type": "string"
+                , "allowed": 
+                    [ "Ebay"
+                    , "Gumtree"
+                    , "Twitter"
+                    ]
+                }
             , "price": {}
             , "quantity": {}
             , "species": {}
@@ -34,8 +34,10 @@ DOMAIN =\
             , "url": {}
             , "weighting": {}
             , "username": {}
-            , "uuid": {"type": "string"
-                       "unique": True}
+            , "uuid": 
+                { "type": "string"
+                , "unique": True
+                }
               # user - entered fields
             , "additional_notes": {}
             , "case_handler_contact_info": {}
@@ -45,14 +47,14 @@ DOMAIN =\
             , "family": {}
             , "genus": {}
             , "importer_country": {}
-            , "listing_type": {"type": "string",
-                               "allowed": 
-                                   [ "Import request"
-                                   , "Export offer"
-                                   , "Commision"
-                                   ] 
-                               }
-                               
+            , "listing_type": 
+                { "type": "string"
+                , "allowed": 
+                    [ "Import request"
+                    , "Export offer"
+                    , "Commision"
+                    ] 
+                }
             , "order": {} #taxonomy order
             , "purpose": {} #Trophy, medicine, taxidermy
             , "relevant_authorities": {}
