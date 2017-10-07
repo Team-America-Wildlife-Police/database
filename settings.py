@@ -9,8 +9,8 @@ DOMAIN =\
     { "post":
         { "schema": 
             { # scraped fields
-             "date_accessed": {"type":"datetime"}
-            , "date_listed": {"type":"datetime"}
+             "date_accessed": {"type":"number"}
+            , "date_listed": {"type":"number"}
             , "description": {}
             , "keyword_tags": {}
             , "product_img_url": {}
