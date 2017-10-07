@@ -18,12 +18,13 @@ DOMAIN =\
             , "reported_animal" : {"type": "string"}
             , "reported_how": {}
             , "reported_where": {}
+            , "score": {}
             , "source": 
                 { "type": "string"
                 , "allowed": 
-                    [ "Ebay"
-                    , "Gumtree"
-                    , "Twitter"
+                    [ "ebay"
+                    , "gumtree"
+                    , "twitter"
                     ]
                 }
             , "price": {}
@@ -32,7 +33,6 @@ DOMAIN =\
             , "title": { "type": "string" }
             , "unit": {} #kg, individuals, etc.
             , "url": {}
-            , "weighting": {}
             , "username": {}
             , "uuid": 
                 { "type": "string"
