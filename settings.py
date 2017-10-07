@@ -9,7 +9,7 @@ DOMAIN =\
     { "post":
         { "schema": 
             { # scraped fields
-            , "date_accessed": {"type":"datetime"}
+             "date_accessed": {"type":"datetime"}
             , "date_listed": {"type":"datetime"}
             , "description": {}
             , "keyword_tags": {}
@@ -42,11 +42,14 @@ DOMAIN =\
             , "family": {}
             , "genus": {}
             , "importer_country": {}
-            , "listing_type": 
-                [ "Import request"
-                , "Export offer"
-                , "Commision"
-                ]
+            , "listing_type": {"type": "string",
+                               "allowed": 
+                                   [ "Import request"
+                                   , "Export offer"
+                                   , "Commision"
+                                   ] 
+                               }
+                               
             , "order": {} #taxonomy order
             , "purpose": {} #Trophy, medicine, taxidermy
             , "relevant_authorities": {}
