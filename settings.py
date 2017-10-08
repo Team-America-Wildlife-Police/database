@@ -5,7 +5,7 @@ Created on Sat Oct  7 15:21:03 2017
 @author: Joaquin
 """
 
-DOMAIN =\
+DOMAIN = (
     { "post":
         { "schema": 
             { # scraped fields
@@ -63,8 +63,18 @@ DOMAIN =\
             , "verified by": {} #e.g. sergio.
             }
         }
+    , "trader": 
+        { "usernames" : 
+            { "type": "list"
+            , "schema": { "type": "string" }
+            }
+        , "uuid": 
+            { "type": "string"
+            , "unique": True
+            }
+        }
     }
-
+)
 # Enable reads (GET), inserts (POST) and DELETE for resources/collections
 # (if you omit this line, the API will default to ['GET'] and provide
 # read-only access to the endpoint).
